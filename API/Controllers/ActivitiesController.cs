@@ -19,7 +19,6 @@ namespace API.Controllers
         {
             
             return await _context.Activities.ToListAsync();
-
         }
 
         [HttpGet("{id}")] //api/activities
@@ -27,7 +26,6 @@ namespace API.Controllers
         {
 
             return await _context.Activities.FirstOrDefaultAsync(x => x.Id == id);
-
         }
     }
 }
